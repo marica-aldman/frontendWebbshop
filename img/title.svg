@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 854 158">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-custom_1);
+      }
+
+      .cls-2 {
+        fill: #f60;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 48px;
+        font-family: Montserrat-Regular, Montserrat;
+      }
+    </style>
+    <clipPath id="clip-custom_1">
+      <rect width="854" height="158"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" class="cls-1">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="50" cy="49.6" rx="50" ry="49.6" transform="translate(46 29)"/>
+    <path id="tag-solid" class="cls-3" d="M0,24.621V4.688A4.687,4.687,0,0,1,4.688,0H24.621a4.687,4.687,0,0,1,3.315,1.373L48.627,22.065a4.687,4.687,0,0,1,0,6.629L28.694,48.627a4.687,4.687,0,0,1-6.629,0L1.373,27.935A4.688,4.688,0,0,1,0,24.621ZM10.938,6.25a4.688,4.688,0,1,0,4.688,4.688A4.687,4.687,0,0,0,10.938,6.25Z" transform="translate(71 63)"/>
+    <path id="Path_1" data-name="Path 1" class="cls-3" d="M4,141.335c33.678-33.844,42-28.05,42-28.05Z" transform="translate(62.561 -75.904) rotate(-2)"/>
+    <text id="HARALD_WEBBSHOP" data-name="HARALD WEBBSHOP" class="cls-4" transform="translate(159 96)"><tspan x="0" y="0">HARALD WEBBSHOP</tspan></text>
+  </g>
+</svg>
