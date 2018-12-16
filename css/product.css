@@ -1,0 +1,152 @@
+/* make type of information bold */
+
+main {
+    box-sizing: border-box;
+    padding-top: 100px;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+
+.category { 
+    font-weight: bold;
+}
+
+.big_img_container {
+/* for the hover keep the text inside the picture*/
+    position: relative;
+    margin: auto;
+}
+
+/* fit the image to the viewport */
+
+.big_img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/*display enlarging icon and tone out the image when hovering */
+
+.big_img_container:hover .zoom_in {
+    opacity: 1;
+}
+
+.big_img_container:hover .big_img {
+    opacity: 0.5;
+}
+
+/* position enlarging icon over the img */
+
+.zoom_in {
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+/*center the small images under the big image */
+
+.small_pictures{
+    text-align: center;
+    margin: auto;
+}
+
+/* place the images next to eachother with a small gap */
+
+.small_img {
+    display: inline-block;
+    width:40%;
+    max-width: 50px;
+    margin:2%;
+}
+
+.small_pictures img.highlight {
+    outline: 2px solid #000000;
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.658);
+    justify-items: center;
+    display:none;
+}
+
+#overlay.visable {
+    display:flex;
+}
+
+.overlay_img {
+    display:inline-block;
+    max-width: 100%;
+    align-self: center; /* to center the image without stretching it */
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border: 1px solid #000000;
+}
+
+.button {
+    margin: auto;
+    border: none;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+
+.product_info {
+    padding: 10px;
+    background-color: rgb(255, 209, 152);
+    border: 1px solid #000000;
+    width: 300px;
+    margin: auto;
+}
+
+/* alter the flow of content depending on how large the screen is above is for phone and exceptionally small screens, below is for larger in steps */
+
+@media(min-width:300px){
+
+    .product_images {
+        max-width:300px;
+    }
+
+    .big_img_container{
+        width:300px;
+    }
+
+    .big_img{
+        width:300px;
+    }
+
+    .small_pictures {
+        width:300px;
+    }
+
+}
+
+
+@media(min-width:600px){
+
+    .main_wrapper {
+        display: flex;
+        padding-left: 10%;
+        justify-content: space-between;
+    }
+
+    .product_info{
+        width: 300px;
+    }
+
+}
+
+
+@media (max-width: 1024px){
+
+}
