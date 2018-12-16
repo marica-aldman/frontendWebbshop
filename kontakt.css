@@ -1,0 +1,87 @@
+body {
+    box-sizing: border-box;
+}
+header ul {
+    list-style: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+@media (min-width:600px) {
+
+/* Placing items in the header correctly */
+
+.top_header{
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.center_header {
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.right_side_icons {
+    display: inline-block;
+}
+.search_form {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+/* Placing items in the nav correctly */
+
+nav ul li {
+    float: left;
+    width: 25%;
+}
+
+nav ul li:last-of-type{
+    text-align: right;
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+
+/* Placing items in the footer correctly */
+
+.top_footer, .bottom_footer{
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.accepted_payments_list li, .social_icons li {
+    display: inline;
+}
+}
+
+.support {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70%;
+    float: left;
+    margin-left: 15%;
+}
+
+.support div {
+    text-align: center;
+}
+
+.Adresser {
+    padding-top: 35px;
+    clear: left;
+    justify-content: center; 
+    flex-flow: column;
+    text-align: center;
+}
