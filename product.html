@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Harald</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/product.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <script src="js/product.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <img src="img/title.svg" alt="">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#"><i class="fas fa-tshirt"></i>Kategorier</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>Kontakta</a></li>
+            <li><a href="#"><i class="fas fa-rss-square"></i>Blog</a></li>
+        </ul>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+
+        <!-- The specific image and info should be taken from a database, also check if using js for picture switches and overlay -->
+        <section class="main_wrapper">
+            <section class="procuct_images">
+                <!--image and image scroller-->
+                <div class="big_img_container">
+                    <img src="img/product1.png" class="big_img" id="img_big">
+                    <div class="zoom_in"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="small_pictures" id="img_small">
+                    <img src="img/product1_small.png" class="small_img" data-srcbig="img/product1.png" alt="">
+                    <img src="img/product2_small.png" class="small_img" data-srcbig="img/product2.png" alt="">
+                    <img src="img/product3_small.png" class="small_img" data-srcbig="img/product3.png" alt="">
+                    <img src="img/product4_small.png" class="small_img" data-srcbig="img/product4.png" alt="">
+                </div>
+            </section>
+            <!-- overlay shows when the big picture is clicked otherwise hidden
+        can be scrolled through to see the rest of the images -->
+
+            <section id="overlay">
+                <button id="previous_img" class="button"><i class="fas fa-arrow-left"></i></button>
+                <img class="overlay_img">
+                <button id="next_img" class="button"><i class="fas fa-arrow-right"></i></button>
+            </section>
+
+            <!-- This information should be loaded from a database depending on clicked info or direct link -->
+
+            <section class="product_info">
+                <p><span class="category">Product Name:</span> Numbers</p>
+                <p><span class="category">Product type:</span> Example</p>
+            </section>
+            <section>
+                <!--other, ratings etc-->
+            </section>
+        </section>
+    </main>
+
+    <!-- Add footer -->
+
+</body>
+
+</html>
